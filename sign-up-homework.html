@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    //$( "#datepicker" ).datepicker();
+  });
+  </script>
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>HTML5: Week One</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>HTML5: Week One</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">home</a></li>
+				<li> <a href="#">gallery</a></li>
+				<li> <a href="sign-up-homework.html">Visit a Class</a></li>
+				<li> <a href="#">Mobile Site</a></li>
+				<li> <a href="http://www.google.com">Google</a></li>
+			</ul>
+		</nav>
+		<div id="mainContent">
+          <h3>The best way to learn about the program is to visit a class.</h3>
+			<!-- A Simple Form    -->
+		  <form id="sign-up" method="get" action="#">
+            <fieldset>
+              <h2>Fill out the information below to reserve your spot.</h2>
+              <ul>
+                <li>
+                  <label for="first-name">First Name</label>
+                  <input id="first-name" type="text" name="first-name" placeholder="first name" required />
+                </li>
+                <li>
+                  <label for="last-name">Last Name</label>
+                  <input id="last-name" type="text" name="last-name" placeholder="last name" required />
+                </li>
+                <li>
+                  <label for="email">Email Address</label>
+                  <input id="email" type="email" name="email" placeholder="name@company.com" required />
+                </li>
+                <li>
+                  <label for="tel">Telephone Number</label>
+                  <input id="tel" type="tel" name="tel" pattern="^[0-9]{10}" placeholder="5555555555" title="Ten digit phone number without hyphens" required />
+                </li>
+                <li>
+                  <label for="address">Mailing Address</label>
+                  <input id="address" type="text" name="address" placeholder="123 Pleasant St." required />
+                </li>
+                <li>
+                  <label for="zip">Zip Code</label>
+                  <input id="zip" type="text" required placeholder="98103" pattern="^[0-9]{5}" title="Five digit postal code" />
+                </li>
+                <li>
+                  <label for="topic">Preferred Class Topic</label>
+                  <select id="topic" name="topic" required>
+                    <option value="" disabled selected>Select a topic</option>
+                    <option value="Accounting">Accounting</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Information Systems">Information Systems</option>
+                    <option value="Management">Management</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Supply Chain">Supply Chain</option>
+                  </select>
+                </li>
+                <li>
+                  <label for="date">Preferred Class Visit Date</label>
+                  <input id="date" type="date" min="2016-01-01" max="2016-12-31" required />
+                  </input>
+                </li>
+                <li>
+                  <label>Years of Work Expereince</label>
+                  <input type="number" value="1" placeholder="100" max="80" min="1"/>
+                </li>
+              </ul>
+              <input type="submit" value="Sign up!" name="submit"/>
+            </fieldset>
+          </form>
+            
+            	
+
+        </div><!-- closing maincContent div tag -->
+		
+		
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; copyright 2016</p>
+			
+		</footer>
+
+	</body>
+</html>
